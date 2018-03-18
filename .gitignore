@@ -1,0 +1,6 @@
+*.pyc
+project14/output/*.csv
+project14/subriber/node_modules
+Pipfile
+command.txt
+.DS_Store
