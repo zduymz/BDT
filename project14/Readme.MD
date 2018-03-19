@@ -108,9 +108,10 @@ python tw_crwl_to_kfk.py <keyword>
 sudo yum install gcc-c++ -y
 curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
 
-cd project14/subcriber
+cd project14/dashboard
 npm install
 ```
+- Edit file dashboard/config.js
 - Start Dashboard web app
 ```shell
 node app.js
