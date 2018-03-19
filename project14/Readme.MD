@@ -8,7 +8,7 @@ Analyze tweets sentiment by using Spark streaming and making chart in near real-
 # Architecture
 Get streaming data from twitter, then push message into Kafka. Spark streaming app process raw data from kafka, then push processed data into kafka. Web app read result from kafka and showing chart on browser.
 (For demonstration purpose, so i used 1 Spark master, 1 Spark worker, Zookeeper, Kafka run as single mode) \
-![Architecture](./image/architecture.jpeg "Architecture")
+![Architecture](./image/architecture.jpg "Architecture")
 
 # Packages info
 - Scala 2.12
