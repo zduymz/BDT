@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js'></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    </head>
+    <body>
+        <div id="pie_chart"></div>
+        <div id="negative_bar_chart"></div>
+        <div id="postive_bar_chart"></div>
+        <div id="neutral_bar_chart"></div>
+
+        <!-- initialize empty chart -->
+        <script>
+            var layout = { title: 'Tweets Sentiment for Trump' }
+            var pie_init_data = [{values: [1, 1, 1],labels: ['NEGATIVE', 'POSITIVE', 'NEUTRAL'],type: 'pie'}];
+            Plotly.newPlot('pie_chart', pie_init_data);
+        </script>
+        <script src="/js/chart.js"></script>
+    </body>
+</html>
