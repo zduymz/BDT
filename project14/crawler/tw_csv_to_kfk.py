@@ -23,7 +23,7 @@ def csv_to_kfk(filename):
                 json_send_data['name'] = line[4]
                 json_send_data['location'] = line[2]
                 json_send_data['text'] = line[0]
-                json_send_data['senti_val'] = line[5]
+                json_send_data['senti_val'] = line[-1]
             except Exception as e:
                 continue
             producer.produce(bytes(json.dumps(json_send_data)))
